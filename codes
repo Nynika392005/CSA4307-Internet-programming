@@ -1,0 +1,342 @@
+STEP 4: ADD CODE TO FILES
+1.home.html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<style>
+body {
+font-family: 'Segoe UI', sans-serif;
+background: linear-gradient(135deg, #00796b, #004d40); /* Green
+gradient background */
+background-size: cover;
+background-position: center;
+15
+background-attachment: fixed;
+margin: 0;
+padding: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+}
+.content-box {
+background-color: rgba(255, 255, 255, 0.9);
+padding: 40px;
+border-radius: 12px;
+box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+text-align: center;
+backdrop-filter: blur(5px);
+width: 300px;
+text-transform: uppercase;
+}
+h2 {
+color: #004d40;
+font-size: 24px;
+margin-bottom: 20px;
+}
+a {
+color: #00796b;
+text-decoration: none;
+font-weight: bold;
+margin: 10px 20px;
+font-size: 16px;
+16
+transition: color 0.3s;
+}
+a:hover {
+color: #004d40;
+text-decoration: underline;
+}
+.content-box a {
+display: inline-block;
+padding: 10px;
+margin: 10px;
+background-color: #ffffff;
+border-radius: 8px;
+transition: background-color 0.3s, transform 0.3s;
+}
+.content-box a:hover {
+background-color: #004d40;
+color: #ffffff;
+transform: scale(1.05);
+}
+</style>
+</head>
+<body>
+<div class="content-box">
+<h2>Welcome to Doctor Appointment Portal</h2>
+<a href="register.html">Register</a>
+<a href="login.html">Login</a>
+</div>
+</body>
+17
+</html>
+2.register.html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register</title>
+<style>
+body {
+font-family: 'Segoe UI', sans-serif;
+background: linear-gradient(135deg, #00796b, #004d40);
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+margin: 0;
+padding: 0;
+18
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+}
+.content-box {
+background-color: rgba(255, 255, 255, 0.9);
+padding: 40px;
+border-radius: 12px;
+box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+text-align: center;
+backdrop-filter: blur(5px);
+width: 400px;
+}
+h2 {
+color: #004d40;
+font-size: 24px;
+margin-bottom: 20px;
+}
+input {
+width: 100%;
+padding: 10px;
+margin: 10px 0;
+border: 1px solid #00796b;
+border-radius: 5px;
+font-size: 16px;
+}
+button {
+width: 100%;
+19
+padding: 10px;
+background-color: #00796b;
+color: white;
+font-size: 16px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+button:hover {
+background-color: #004d40;
+}
+</style>
+</head>
+<body>
+<div class="content-box">
+<h2>Register for Appointment</h2>
+<form action="login.html">
+<input type="text" name="username" placeholder="Username"
+required><br>
+<input type="password" name="password" placeholder="Password"
+required><br>
+<input type="email" name="email" placeholder="Email" required><br>
+<button type="submit">Register</button>
+</form>
+</div>
+</body>
+20
+</html>
+3.login.html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<style>
+body {
+font-family: 'Segoe UI', sans-serif;
+background: linear-gradient(135deg, #00796b, #004d40);
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+21
+margin: 0;
+padding: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+}
+.content-box {
+background-color: rgba(255, 255, 255, 0.9);
+padding: 40px;
+border-radius: 12px;
+box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+text-align: center;
+backdrop-filter: blur(5px);
+width: 400px;
+}
+h2 {
+color: #004d40;
+font-size: 24px;
+margin-bottom: 20px;
+}
+input {
+width: 100%;
+padding: 10px;
+margin: 10px 0;
+border: 1px solid #00796b;
+border-radius: 5px;
+font-size: 16px;
+}
+22
+button {
+width: 100%;
+padding: 10px;
+background-color: #00796b;
+color: white;
+font-size: 16px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+button:hover {
+background-color: #004d40;
+}
+</style>
+</head>
+<body>
+<div class="content-box">
+<h2>Login to Your Account</h2>
+<form action="slots.html">
+<input type="text" name="username" placeholder="Username"
+required><br>
+required><br>
+</form>
+<input type="password" name="password" placeholder="Password"
+<button type="submit">Login</button>
+</div>
+</body>
+</html>
+4.slots.html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Available Slots</title>
+<style>
+body {
+font-family: 'Segoe UI', sans-serif;
+background: linear-gradient(135deg, #00796b, #004d40);
+background-size: cover;
+24
+background-position: center;
+background-attachment: fixed;
+margin: 0;
+padding: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+}
+.content-box {
+background-color: rgba(255, 255, 255, 0.9);
+padding: 40px;
+border-radius: 12px;
+box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+text-align: center;
+backdrop-filter: blur(5px);
+width: 400px;
+}
+h2 {
+color: #004d40;
+font-size: 24px;
+margin-bottom: 20px;
+}
+.slot {
+padding: 10px;
+background-color: #00796b;
+color: white;
+margin: 10px;
+border-radius: 5px;
+25
+cursor: pointer;
+}
+.slot:hover {
+background-color: #004d40;
+}
+</style>
+</head>
+<body>
+<div class="content-box">
+<h2>Available Slots</h2>
+<div class="slot">Slot 1: 9:00 AM</div>
+<div class="slot">Slot 2: 10:00 AM</div>
+<div class="slot">Slot 3: 11:00 AM</div>
+<div class="slot">Slot 4: 1:00 PM</div>
+<div class="slot">Slot 5: 3:00 PM</div>
+<a href="booking.html">Proceed to Book</a>
+</div>
+</body>
+</html>
+26
+5.booking.html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Booking Confirmation</title>
+<style>
+body {
+font-family: 'Segoe UI', sans-serif;
+background: linear-gradient(135deg, #00796b, #004d40);
+27
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+margin: 0;
+padding: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+}
+.content-box {
+background-color: rgba(255, 255, 255, 0.9);
+padding: 40px;
+border-radius: 12px;
+box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+text-align: center;
+backdrop-filter: blur(5px);
+width: 400px;
+}
+h2 {
+color: #004d40;
+font-size: 24px;
+margin-bottom: 20px;
+}
+p {
+color: #004d40;
+font-size: 18px;
+margin-bottom: 20px;
+}
+28
+button {
+padding: 10px 20px;
+background-color: #00796b;
+color: white;
+font-size: 16px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+button:hover {
+background-color: #004d40;
+}
+</style>
+</head>
+<body>
+<div class="content-box">
+<h2>Booking Confirmation</h2>
+<p>Your appointment has been successfully booked!</p>
+<button onclick="window.location.href='home.html'">Go Back to
+Home</button>
+</div>
+</body>
+</html>
